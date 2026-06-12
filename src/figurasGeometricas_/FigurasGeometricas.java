@@ -9,18 +9,18 @@ package figurasGeometricas_;
  * @author bycha
  */
 public abstract class FigurasGeometricas {
- private double perimetro;   
- private double area;
+ //private double perimetro;   
+ //private double area;
 
     public double getPerimetro() {
-        return perimetro;
+        return this.CalcularPerimetro();
     }
 
     public double getArea() {
-        return area;
+        return this.CalcularArea();
     }
- public abstract double CalcularPerimetro();
- public abstract double CalcularArea();
+ protected abstract double CalcularPerimetro();
+ protected abstract double CalcularArea();
      
 
 }
