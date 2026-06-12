@@ -30,17 +30,21 @@ public class Circulo extends FigurasGeometricas {
     public void setRadio(double radio) {
         this.radio = radio;
     }
-
+private double calcularDiametro(){
+    return calcularDiametro();
+            }
     @Override
-    public double calcularPerimetro() {
-        this.perimetro = 2 * radio * PI;
-        return perimetro;
+    protected double calcularPerimetro() {
+        
+        return 2 * radio * PI;
     }
 
     @Override
-    public double calcularArea() {
-        this.area = Math.pow(radio, 2) * PI;
-        return area;
+    protected double calcularArea() {
+       
+        return Math.pow(radio, 2) * PI;
     }
+
+   
 
 }
